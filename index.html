@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Md Reyad Hossain · AI, Machine Learning & Health Informatics</title>
+<meta name="description" content="Md Reyad Hossain, MSc researcher in Computer Science at UTAR, Malaysia. Research in AI, machine learning, data science and health informatics. Open to PhD positions.">
+<meta name="author" content="Md Reyad Hossain">
+<meta name="keywords" content="Md Reyad Hossain, machine learning, artificial intelligence, data science, health informatics, PhD applicant, UTAR, researcher">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Md Reyad Hossain · Researcher">
+<meta property="og:description" content="AI, machine learning, data science and health informatics. Open to PhD positions.">
+<meta name="theme-color" content="#0B7A6B">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar" id="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="#top" id="brand"></a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="topbar-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="Switch light or dark theme">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.39 5.39 0 0 1-4.4 2.26 5.4 5.4 0 0 1-3.14-9.8A9 9 0 0 0 12 3Z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <canvas id="net" aria-hidden="true"></canvas>
+    <div class="hero-in">
+      <div class="hero-text">
+        <div class="seeking" id="seeking" hidden><span class="dot"></span><span id="seekingText"></span></div>
+        <h1 class="hero-name" id="heroName"></h1>
+        <p class="hero-role" id="heroRole"></p>
+        <p class="hero-tag" id="heroTag"></p>
+        <div class="hero-cta">
+          <a class="btn primary" id="cvBtn" href="#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 16 7 11l1.4-1.4 2.6 2.6V4h2v8.2l2.6-2.6L17 11l-5 5ZM5 20v-2h14v2H5Z"/></svg>
+            Download CV
+          </a>
+          <a class="btn" href="#publications">Publications</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+        <div class="profiles" id="profiles" aria-label="Academic profiles"></div>
+      </div>
+      <figure class="portrait">
+        <div class="portrait-ring">
+          <img id="photo" alt="" hidden>
+          <span id="initials"></span>
+        </div>
+        <figcaption id="heroPlace"></figcaption>
+      </figure>
+    </div>
+    <dl class="stats" id="stats"></dl>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="sec" id="about">
+    <div class="sec-head"><span class="kicker">01 · About</span><h2>About me</h2></div>
+    <div class="about-grid">
+      <div class="prose" id="aboutText"></div>
+      <aside class="news">
+        <h3>Latest news</h3>
+        <ul id="newsList"></ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section class="sec" id="research">
+    <div class="sec-head"><span class="kicker">02 · Research</span><h2>Research interests</h2></div>
+    <div class="interests" id="interests"></div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section class="sec" id="publications">
+    <div class="sec-head"><span class="kicker">03 · Publications</span><h2>Publications</h2></div>
+    <div class="toolbar">
+      <label class="search"><span class="sr">Search publications</span>
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 0 1 6.32 12.9l5.39 5.4-1.41 1.4-5.4-5.39A8 8 0 1 1 10 2Zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12Z"/></svg>
+        <input id="pubSearch" type="search" placeholder="Search title, venue, co-author">
+      </label>
+      <div class="seg" id="pubFilter" role="group" aria-label="Filter by type"></div>
+    </div>
+    <div id="pubList"></div>
+    <p class="note" id="pubNote"></p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="sec" id="projects">
+    <div class="sec-head"><span class="kicker">04 · Projects</span><h2>Projects</h2></div>
+    <div class="seg" id="projFilter" role="group" aria-label="Filter projects by topic"></div>
+    <div class="projects" id="projList"></div>
+  </section>
+
+  <!-- EXPERIENCE + EDUCATION -->
+  <section class="sec" id="experience">
+    <div class="sec-head"><span class="kicker">05 · Experience</span><h2>Experience &amp; education</h2></div>
+    <div class="two-col">
+      <div><h3 class="col-title">Research experience</h3><ol class="timeline" id="expList"></ol></div>
+      <div><h3 class="col-title">Education</h3><ol class="timeline" id="eduList"></ol>
+        <div class="coursework"><h4>Relevant coursework</h4><ul class="chips" id="coursework"></ul></div>
+      </div>
+    </div>
+    <div class="two-col" id="talksAwards"></div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="sec" id="skills">
+    <div class="sec-head"><span class="kicker">06 · Skills</span><h2>Skills, certificates &amp; leadership</h2></div>
+    <div class="skills" id="skillGrid"></div>
+    <div class="two-col">
+      <div><h3 class="col-title">Certificates</h3><ul class="certs" id="certList"></ul></div>
+      <div><h3 class="col-title">Leadership &amp; service</h3><ul class="ticks" id="actList"></ul></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="sec contact" id="contact">
+    <div class="sec-head"><span class="kicker">07 · Contact</span><h2>Let's work together</h2></div>
+    <div class="contact-grid">
+      <div>
+        <p class="contact-lead">I am open to PhD supervision, research collaborations and conversations about AI in healthcare.</p>
+        <div class="contact-row"><span class="label">Email</span>
+          <span class="copyline"><a id="emailLink" href="#"></a><button class="mini" id="copyEmail">Copy</button></span></div>
+        <div class="contact-row"><span class="label">Based in</span><span id="contactPlace"></span></div>
+        <div class="contact-row"><span class="label">CV</span><a id="cvLink" href="#" target="_blank" rel="noopener">Download PDF</a></div>
+        <div class="profiles small" id="profiles2"></div>
+      </div>
+      <form class="form" id="contactForm" method="POST" hidden>
+        <label>Your name<input name="name" id="f-name" required autocomplete="name"></label>
+        <label>Email<input name="email" id="f-email" type="email" required autocomplete="email"></label>
+        <label>Message<textarea name="message" id="f-msg" rows="5" required></textarea></label>
+        <button class="btn primary" type="submit">Send message</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span id="footName"></span>
+  <span id="footNote" class="mono"></span>
+  <a href="#top">Back to top ↑</a>
+</footer>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script src="data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
