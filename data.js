@@ -37,7 +37,7 @@ window.SITE = {
   /* ---------- 2. ACADEMIC & SOCIAL PROFILES ----------
      Paste your full profile link inside the quotes. Empty ones stay hidden. */
   links: {
-    orcid:           "https://orcid.org/0009-0005-5082-1880",   // e.g. "https://orcid.org/0000-0000-0000-0000"
+    orcid:           "https://orcid.org/0009-0005-5082-1880",   
     googleScholar:   "",   // e.g. "https://scholar.google.com/citations?user=XXXX"
     researchGate:    "",   // e.g. "https://www.researchgate.net/profile/Md-Reyad-Hossain"
     scopus:          "",   // Scopus author page
@@ -102,7 +102,7 @@ window.SITE = {
       year: 2026, type: "conference", status: "accepted", selected: true,
       doi: "", pdf: "", code: "", slides: "",
       abstract: ""
-    }
+    } */
     /* COPY THIS BLOCK TO ADD A NEW PAPER (remember the comma between items):
     ,{
       title: "", authors: "**M. R. Hossain**, ", venue: "",
