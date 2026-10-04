@@ -19,7 +19,7 @@ window.SITE = {
     affiliation: "Universiti Tunku Abdul Rahman (UTAR)",
     location: "Kampar, Perak, Malaysia",
     email: "reyadhussain.cse@gmail.com",
-    photo: "assets/img/profile.jpeg",      // put your photo here with this exact name (square works best)
+    photo: "assets/img/profile.jpg",      // put your photo here with this exact name (square works best)
     cv: "assets/cv.pdf",                  // replace this file to update your CV
     tagline: "I use AI, machine learning and data science to turn real-world data into decisions, with a focus on health informatics.",
     about: [
